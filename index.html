@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex by Brandt Ewick</title>
+    <link type= "text/css" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Luckiest+Guy" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="pokedexSearch">
+        <form>
+            <p>
+              <label for="search">Search the Pokedex: </label>
+              <input type="text" id="search" class="search" required>
+            </p>
+            <p>
+                <button class="submit">Who's that Pokemon?</button>
+              </p>
+            </form>
+        </div>
+        <div class="nintendoSwitch">
+          
+            <div class="pokeInfo"></div>
+        </div>
+        <button class="pikachuButton">
+            <img onclick="playAudio()" id="pikachu" src="./assets/pikachu.png" style="width:300px;height:400px;" alt="Uh oh...looks like Pikachu has run away.."/>
+            <audio id="myAudio">
+                <source src="./assets/pikachuSound.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </button>
+    </div>
+    <div class="container">
+        <label for="signUp"><h2>Want to Join the Ultimate Pokemon Fan Club?</h2></label>
+        <form>
+            
+          <label for="name"><p>Name:</p></label>
+          <input type="text" id="flname" name="firstLastName" placeholder="Ash Ketchum">
+      
+          <label for="email"><p>Email:</p></label>
+          <input type="text" id="uemail" name="usableEmail" placeholder="aketchum@pidgeymail.com">
+      
+          <label for="gamerType"><p>What kind of trainer are you?</p></label>
+          <select id="gamer" name="gamer">
+            <option value="unite">Pokemon Unite Champion</option>
+            <option value="nuzlocke">Nuzlocke Master</option>
+            <option value="go">Pokemon Go Veteran</option>
+            <option value="handheld">Handheld Die Hard</option>
+            <option value="episode">Episode Fanatic</option>
+          </select>
+          <button class="joinClub">Join the Club!</button>
+        
+      
+        </form>
+      </div>
+    <script src="./script.js"></script>
+</body>
+</html>
